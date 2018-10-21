@@ -57,7 +57,7 @@ int my_str_from_cstr(my_str_t *str, const char *cstr, size_t buf_size) {
 
 //! Звільнє пам'ять, знищуючи стрічку:
 void my_str_free(my_str_t *str) {
-
+//    твоє
 }
 
 //! Повертає розмір стрічки:
@@ -102,6 +102,7 @@ int my_str_putc(my_str_t *str, size_t index, char c) {
 //! Додає символ в кінець.
 //! Повертає 0, якщо успішно, -1, якщо буфер закінчився.
 int my_str_pushback(my_str_t *str, char c) {
+//    твоє
     if (str->size_m + 1 > str->capacity_m){
 
     }
@@ -111,6 +112,7 @@ int my_str_pushback(my_str_t *str, char c) {
 //! Викидає символ з кінця.
 //! Повертає його, якщо успішно, -1, якщо буфер закінчився.
 int my_str_popback(my_str_t *str) {
+//    твоє
     return 0;
 }
 
@@ -124,24 +126,29 @@ int my_str_copy(const my_str_t *from, my_str_t *to, int reserve) {
 
 //! Очищає стрічку -- робить її порожньою. Складність має бути О(1).
 void my_str_clear(my_str_t *str) {
+//    твоє
+//    я думаю тут просто довжину треба поставити 1
 
 }
 
 //! Вставити символ у стрічку в заданій позиції, змістивши решту символів праворуч.
 //! Якщо це неможливо, повертає -1, інакше 0.
 int my_str_insert_c(my_str_t *str, char c, size_t pos) {
+//    твоє
     return 0;
 }
 
 //! Вставити стрічку в заданій позиції, змістивши решту символів праворуч.
 //! Якщо це неможливо, повертає -1, інакше 0.
 int my_str_insert(my_str_t *str, const my_str_t *from, size_t pos) {
+    //    твоє
     return 0;
 }
 
 //! Вставити C-стрічку в заданій позиції, змістивши решту символів праворуч.
 //! Якщо це неможливо, повертає -1, інакше 0.
 int my_str_insert_cstr(my_str_t *str, const char *from, size_t pos) {
+    //    твоє
     return 0;
 }
 
@@ -154,6 +161,7 @@ int my_str_append(my_str_t *str, const my_str_t *from) {
 //! Додати С-стрічку в кінець.
 //! Якщо це неможливо, повертає -1, інакше 0.
 int my_str_append_cstr(my_str_t *str, const char *from) {
+    //    твоє
     return 0;
 }
 
@@ -169,6 +177,7 @@ int my_str_cmp(my_str_t *str, const char *from) {
 //! це помилкою. Якщо ж в ціловій стрічці замало місця, або beg більший
 //! за розмір str -- це помилка. Повернути відповідний код завершення.
 int my_str_substr(const my_str_t *str, const char *to, size_t beg, size_t end) {
+    //    твоє
     return 0;
 }
 
